@@ -27,7 +27,7 @@
         android:layout_height="80dp"
         android:layout_below="@id/btn_quiz1"
         android:layout_marginTop="20dp"
-        android:text="OSMF-REBAGEN Survey" />
+        android:text="@string/osmf_rebagen_survey" />
 
     <Button
         android:id="@+id/btn_quiz3"
@@ -36,7 +36,7 @@
         android:layout_height="80dp"
         android:layout_below="@id/btn_quiz2"
         android:layout_marginTop="20dp"
-        android:text="" />
+        android:text="@string/montemac_fx_survey" />
 
 
 

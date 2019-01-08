@@ -20,7 +20,7 @@ public class AddItem extends AppCompatActivity {
 
         setContentView(R.layout.add_item);
 
-        buttonAddItem = (Button)findViewById(R.id.btn_user_add);
+        buttonAddItem = (Button)findViewById(R.id.btn_quiz1);
         buttonAddItem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

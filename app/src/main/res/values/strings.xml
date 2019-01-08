@@ -64,4 +64,6 @@
     <string name="enter_mobile">Enter Mobile</string>
     <string name="mactotal">Mactotal Survey</string>
     <string name="welcome_to_survey">Welcome TO Survey</string>
+    <string name="osmf_rebagen_survey">OSMF-REBAGEN Survey</string>
+    <string name="montemac_fx_survey">Montemac-Fx Survey</string>
 </resources>

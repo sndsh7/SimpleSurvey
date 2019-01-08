@@ -143,7 +143,7 @@ public class Quiz1 extends AppCompatActivity {
 
                         loading.dismiss();
                         Toast.makeText(Quiz1.this,response,Toast.LENGTH_LONG).show();
-                        Intent intent = new Intent(getApplicationContext(),Quiz1.class);
+                        Intent intent = new Intent(getApplicationContext(),MainActivity.class);
                         startActivity(intent);
 
                     }
