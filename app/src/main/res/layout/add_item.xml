@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_Title"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:text="@string/welcome_to_survey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_quiz1"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/tv_Title"
+        android:layout_marginTop="20dp"
+        android:text="@string/mactotal" />
+
+    <Button
+        android:id="@+id/btn_quiz2"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/btn_quiz1"
+        android:layout_marginTop="20dp"
+        android:text="OSMF-REBAGEN Survey" />
+
+    <Button
+        android:id="@+id/btn_quiz3"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/btn_quiz2"
+        android:layout_marginTop="20dp"
+        android:text="" />
+
+
+
+</RelativeLayout>
