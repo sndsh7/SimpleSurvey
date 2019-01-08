@@ -1,7 +1,9 @@
 package com.sbt.sandesh.quizgsheet;
 
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -31,16 +33,19 @@ public class Quiz1 extends AppCompatActivity {
     private RadioButton selectAns1,selectAns2,selectAns3,selectAns4,selectAns5,selectAns6,selectAns7,selectAns8,selectAns9,selectAns10;
     private Button qSubmit;
 
-    EditText editTextName,editTextEmail,editTextMobile;
+    public String Name,Email,Mobile,Place,Speciality;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz1);
 
-        editTextName = (EditText) findViewById(R.id.ed_username);
-        editTextEmail = (EditText) findViewById(R.id.ed_email);
-        editTextMobile = (EditText) findViewById(R.id.ed_mobile);
+        SharedPreferences result = getSharedPreferences("SaveData",Context.MODE_PRIVATE);
+        Name = result.getString("Name","Data not found");
+        Email = result.getString("Email","Data not found");
+        Mobile = result.getString("Mobile","Data not found");
+        Place = result.getString("Place","Data not found");
+        Speciality = result.getString("Speciality","Data not found");
 
         addListenerOnButton();
     }
@@ -99,19 +104,21 @@ public class Quiz1 extends AppCompatActivity {
 
 //                Toast.makeText(Quiz1.this,
 //                        selectAns1.getText(), Toast.LENGTH_SHORT).show();
-                Quiz1();
+                Quizz1();
             }
         });
 
 
     }
 
-    private void Quiz1()
+    private void Quizz1()
     {
-        final ProgressDialog loading = ProgressDialog.show(this,"Create User","Please wait");
-        final String name = editTextName.getText().toString().trim();
-        final String email = editTextEmail.getText().toString().trim();
-        final String mobile = editTextMobile.getText().toString().trim();
+        final ProgressDialog loading = ProgressDialog.show(this,"Your Response Store","Please wait");
+        final String name = Name;
+        final String email = Email;
+        final String mobile = Mobile;
+        final String place = Place;
+        final String speciality = Speciality;
         final String Que1 = question1.getText().toString().trim();
         final String Ans1 = selectAns1.getText().toString().trim();
         final String Que2 = question2.getText().toString().trim();
@@ -161,9 +168,12 @@ public class Quiz1 extends AppCompatActivity {
 
                 //here we pass params
                 parmas.put("action","addItem");
+                //User Info
                 parmas.put("name",name);
                 parmas.put("email",email);
+                parmas.put("place",place);
                 parmas.put("mobile",mobile);
+                parmas.put("speciality",speciality);
                 //Question & Answer 1
                 parmas.put("question1",Que1);
                 parmas.put("answer1",Ans1);

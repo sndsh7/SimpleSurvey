@@ -4,235 +4,217 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Quiz2">
+    tools:context=".Quiz3">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/tv_Quiz2Title"
-            android:text="@string/osmf_rebagen"
-            android:textSize="30sp"
+            android:id="@+id/Montemac-Fx"
+            android:text="Montemac-Fx Survey"
             android:textAlignment="center"
+            android:textSize="30sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-
-
         <TextView
-            android:id="@+id/osmf_q1"
+            android:id="@+id/Montemac_Question1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/tv_Quiz2Title"
+            android:layout_below="@id/Montemac-Fx"
             android:layout_marginTop="20dp"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
-            android:text="@string/q_1_how_many_no_patients_you_diagnose_in_a_month_suffering_from_osmf_oral_submucousal_fibrosis"
+            android:text="Q.1) Which Anti-allergic do you prescribe in Allergic Rhinitis?"
             android:textStyle="bold" />
 
         <RadioGroup
-            android:id="@+id/Radio_osmf1"
+            android:id="@+id/Radio_Montemac1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/osmf_q1">
+            android:layout_below="@id/Montemac_Question1">
 
             <RadioButton
-                android:id="@+id/opt1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="@string/_0_10" />
+                android:text="Levocetrizine" />
 
             <RadioButton
-                android:id="@+id/opt2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="@string/_10_20" />
+                android:text="Fexofenadine " />
 
             <RadioButton
-                android:id="@+id/opt3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="20-30" />
+                android:text="Montelukast+ Fexofenadine" />
 
             <RadioButton
-                android:id="@+id/opt4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text=">30" />
+                android:text="Montelukast+ Levocetrizine" />
 
         </RadioGroup>
 
         <TextView
-            android:id="@+id/osmf_q2"
+            android:id="@+id/Montemac_Question2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/Radio_osmf1"
+            android:layout_below="@id/Radio_Montemac1"
             android:layout_marginTop="20dp"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
-            android:text="Q.2) Which therapy generally you recommend for OSMF?"
+            android:text="Q.2) Which parameters do you consider while prescribing Anti-allergic in Allergic Rhinitis?"
             android:textStyle="bold" />
-        
+
         <RadioGroup
-            android:id="@+id/Radio_osmf2"
+            android:id="@+id/Radio_Montemac2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/osmf_q2">
+            android:layout_below="@id/Montemac_Question2">
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="Corticosteroids" />
+                android:text="Efficacy" />
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="Antioxidants " />
+                android:text="Lesser sedation " />
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="PPI" />
+                android:text="Cardiac Safety" />
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="Multivitamins" />
+                android:text="All of above" />
 
         </RadioGroup>
 
         <TextView
-            android:id="@+id/osmf_q3"
+            android:id="@+id/Montemac_Question3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/Radio_osmf2"
+            android:layout_below="@id/Radio_Montemac2"
             android:layout_marginTop="20dp"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
-            android:text="Q.3) Do you prescribe Rebamipide for OSMF ?"
+            android:text="Q.3) Considering all the above parameters which is the better combination according to you?"
             android:textStyle="bold" />
 
         <RadioGroup
-            android:id="@+id/Radio_osmf3"
+            android:id="@+id/Radio_Montemac3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/osmf_q3">
+            android:layout_below="@id/Montemac_Question3">
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="Yes" />
+                android:text="Montelukast+ Levocetrizine" />
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="@string/no_osmf" />
+                android:text="Montelukast+ Fexofenadine " />
 
 
         </RadioGroup>
 
         <TextView
-            android:id="@+id/osmf_q4"
+            android:id="@+id/Montemac_Question4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/Radio_osmf3"
+            android:layout_below="@id/Radio_Montemac3"
             android:layout_marginTop="20dp"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
-            android:text="Q.4) Which therapy generally you recommend for OSMF?"
+            android:text="Q.4)Do you prescribe Montemac-Fx?"
             android:textStyle="bold" />
 
         <RadioGroup
-            android:id="@+id/Radio_osmf4"
+            android:id="@+id/Radio_Montemac4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/osmf_q4">
+            android:layout_below="@id/Montemac_Question4">
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="@string/_8_10_days" />
+                android:text="YES" />
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="@string/_14_21_days" />
+                android:text="NO" />
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:text="21-28 days" />
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:text=">1 month" />
 
         </RadioGroup>
 
         <TextView
-            android:id="@+id/osmf_q5"
+            android:id="@+id/Montemac_Question5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/Radio_osmf4"
+            android:layout_below="@id/Radio_Montemac4"
             android:layout_marginTop="20dp"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
-            android:text="Please rate the efficacy of Rebamipide in terms of symptoms Like improvement in mouth opening values (Stomatopyrosis and Trismus)"
+            android:text="Q.5) Which Anti-allergic do you prescribe in Allergic Rhinitis?"
             android:textStyle="bold" />
 
         <RadioGroup
-            android:id="@+id/Radio_osmf5"
+            android:id="@+id/Radio_Montemac5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/osmf_q5">
+            android:layout_below="@id/Montemac_Question5">
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="Excellent" />
+                android:text="0-5 days " />
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="Good " />
+                android:text="5-10 days " />
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="Average" />
+                android:text=" 10-15 days" />
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="Poor" />
+                android:text="15-20 days" />
 
         </RadioGroup>
 
         <Button
-            android:id="@+id/btn_quiz2_Submit"
-            android:layout_below="@id/Radio_osmf5"
-            android:layout_marginTop="15dp"
-            android:text="@string/submit_osmf"
+            android:id="@+id/btn_quiz3_submit"
+            android:text="Submit"
+            android:layout_below="@id/Radio_Montemac5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 

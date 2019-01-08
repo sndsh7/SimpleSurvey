@@ -20,7 +20,8 @@
         </activity>
         <activity android:name=".AddItem" />
         <activity android:name=".Quiz1" />
-        <activity android:name=".Quiz2"></activity>
+        <activity android:name=".Quiz2" />
+        <activity android:name=".Quiz3"></activity>
     </application>
 
 </manifest>

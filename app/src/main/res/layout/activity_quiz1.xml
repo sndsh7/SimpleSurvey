@@ -18,7 +18,9 @@
             android:layout_marginStart="0dp"
             android:layout_marginTop="20dp"
             android:text="@string/mactotal_capsule_ntinnitus_feedback_form"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView_q1"
@@ -26,7 +28,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/text_title"
             android:paddingTop="20dp"
-            android:text="@string/q_1_how_many_patients_of_tinnitus_you_see_per_month" />
+            android:text="@string/q_1_how_many_patients_of_tinnitus_you_see_per_month"
+            android:textStyle="bold" />
 
         <RadioGroup
             android:id="@+id/radio_group1"
@@ -70,7 +73,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/radio_group1"
             android:paddingTop="20dp"
-            android:text="@string/q_2_what_is_the_normal_age_group_of_patients_suffering_from_tinnitus" />
+            android:text="@string/q_2_what_is_the_normal_age_group_of_patients_suffering_from_tinnitus"
+            android:textStyle="bold" />
 
         <RadioGroup
             android:id="@+id/radio_group2"
@@ -121,7 +125,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/radio_group2"
             android:paddingTop="20dp"
-            android:text="@string/q_3what_is_the_most_common_etiology_primary_cause_of_tinnitus" />
+            android:text="@string/q_3what_is_the_most_common_etiology_primary_cause_of_tinnitus"
+            android:textStyle="bold" />
 
         <RadioGroup
             android:id="@+id/radio_group3"
@@ -199,7 +204,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/radio_group3"
             android:paddingTop="20dp"
-            android:text="@string/q_4_what_is_your_1st_line_therapy_for_tinnitus" />
+            android:text="@string/q_4_what_is_your_1st_line_therapy_for_tinnitus"
+            android:textStyle="bold"/>
 
         <RadioGroup
             android:id="@+id/radio_group4"
@@ -248,7 +254,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/radio_group4"
             android:paddingTop="20dp"
-            android:text="@string/q_5_do_you_use_drug_therapy_as_primary_therapy_or_adjuvant_therapy_in_tinnitus" />
+            android:text="@string/q_5_do_you_use_drug_therapy_as_primary_therapy_or_adjuvant_therapy_in_tinnitus"
+            android:textStyle="bold"/>
 
         <RadioGroup
             android:id="@+id/radio_group5"
@@ -277,7 +284,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/radio_group5"
             android:paddingTop="20dp"
-            android:text="@string/q_6_which_drug_therapy_you_prefer_most_in_tinnitus" />
+            android:text="@string/q_6_which_drug_therapy_you_prefer_most_in_tinnitus"
+            android:textStyle="bold"/>
 
         <RadioGroup
             android:id="@+id/radio_group6"
@@ -340,7 +348,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/radio_group6"
             android:paddingTop="20dp"
-            android:text="@string/q_7_do_you_use_ginkgo_biloba_for_tinnitus" />
+            android:text="@string/q_7_do_you_use_ginkgo_biloba_for_tinnitus"
+            android:textStyle="bold"/>
 
         <RadioGroup
             android:id="@+id/radio_group7"
@@ -368,7 +377,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/radio_group7"
             android:paddingTop="20dp"
-            android:text="@string/q_8_if_yes_what_dosing_you_prefer_most" />
+            android:text="@string/q_8_if_yes_what_dosing_you_prefer_most"
+            android:textStyle="bold"/>
 
         <RadioGroup
             android:id="@+id/radio_group8"
@@ -403,7 +413,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/radio_group8"
             android:paddingTop="20dp"
-            android:text="@string/q_9_have_you_ever_prescribed_mactotal_capsule" />
+            android:text="@string/q_9_have_you_ever_prescribed_mactotal_capsule"
+            android:textStyle="bold"/>
 
         <RadioGroup
             android:id="@+id/radio_group9"
@@ -431,7 +442,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/radio_group9"
             android:paddingTop="20dp"
-            android:text="@string/q_10_if_yes_for_which_ingredient_you_prescribe_mactotal_capsule_most" />
+            android:text="@string/q_10_if_yes_for_which_ingredient_you_prescribe_mactotal_capsule_most"
+            android:textStyle="bold"/>
 
         <RadioGroup
             android:id="@+id/radio_group10"
@@ -481,35 +493,13 @@
 
         </RadioGroup>
 
-        <EditText
-            android:id="@+id/ed_username"
-            android:hint="Enter name"
-            android:layout_marginTop="15dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/radio_group10"
-            android:autofillHints="" />
-        <EditText
-            android:id="@+id/ed_email"
-            android:hint="Enter Email"
-            android:layout_marginTop="15dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/ed_username"/>
-        <EditText
-            android:id="@+id/ed_mobile"
-            android:hint="Enter Mobile"
-            android:layout_marginTop="15dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/ed_email"/>
 
         <Button
             android:id="@+id/btn_quiz1"
             android:layout_marginTop="35dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/ed_mobile"
+            android:layout_below="@id/radio_group10"
             android:text="submit"
             android:textAlignment="center" />
 

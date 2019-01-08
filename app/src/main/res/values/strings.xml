@@ -66,4 +66,13 @@
     <string name="welcome_to_survey">Welcome TO Survey</string>
     <string name="osmf_rebagen_survey">OSMF-REBAGEN Survey</string>
     <string name="montemac_fx_survey">Montemac-Fx Survey</string>
+    <string name="osmf_rebagen">OSMF-REBAGEN</string>
+    <string name="_10_20">10-20</string>
+    <string name="no_osmf">No</string>
+    <string name="_14_21_days">14-21 days</string>
+    <string name="_8_10_days">8-10 days</string>
+    <string name="q_1_how_many_no_patients_you_diagnose_in_a_month_suffering_from_osmf_oral_submucousal_fibrosis">Q.1) How many no patients you diagnose in a month, suffering from OSMF (Oral Submucousal fibrosis)?</string>
+    <string name="what_is_your_speciality">What is your Speciality ?</string>
+    <string name="_0_10">0-10</string>
+    <string name="submit_osmf">Submit</string>
 </resources>
